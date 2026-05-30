@@ -1,0 +1,328 @@
+export type Lang = "de" | "en";
+
+export const translations: Record<string, Record<Lang, string>> = {
+  // Skip link
+  skipLink: {
+    de: "Zum Hauptinhalt springen",
+    en: "Skip to main content",
+  },
+
+  // Nav
+  navFunktion: { de: "Funktion", en: "Function" },
+  navEinsatz: { de: "Use Cases", en: "Use Cases" },
+  navVergleich: { de: "Vergleich", en: "Comparison" },
+  navKontakt: { de: "Kontakt", en: "Contact" },
+
+  // Hero
+  heroSlogan: { de: "Next Level Awareness", en: "Next Level Awareness" },
+  heroSub1: {
+    de: "SensiGlove warnt vor Hindernissen, bevor man sie berührt. Entfernung wird fühlbar.",
+    en: "SensiGlove warns of obstacles before you touch them. Distance becomes tangible.",
+  },
+  heroSub2: {
+    de: "SensiGlove ist ein Assistenzhandschuh für blinde und sehbehinderte Menschen. Er erkennt Hindernisse vor der Hand und warnt durch Vibration. Je näher ein Objekt, desto stärker das Signal. Keine Sprache, keine Töne, keine Anzeige — nur direktes körperliches Feedback.",
+    en: "SensiGlove is an assistive glove for blind and visually impaired people. It detects obstacles in front of the hand and warns through vibration. The closer an object, the stronger the signal. No speech, no sounds, no display — just direct physical feedback.",
+  },
+  heroReadAloud: {
+    de: "Einführung vorlesen",
+    en: "Read introduction aloud",
+  },
+  heroProductAlt: {
+    de: "SensiGlove Prototyp: Ein schwarzer Handschuh mit einem weißen Gehäuse auf dem Handrücken, das zwei Ultraschallsensoren an der Vorderseite enthält. Vibrationsmotoren sind an den Fingern befestigt.",
+    en: "SensiGlove prototype: A black glove with a white housing on the back of the hand containing two ultrasonic sensors at the front. Vibration motors are attached to the fingers.",
+  },
+
+  // Accessibility section
+  a11yHeading: { de: "Barrierefreiheit als Fundament", en: "Accessibility as Foundation" },
+  a11yReadAloud: { de: "Barrierefreiheit vorlesen", en: "Read accessibility section aloud" },
+  a11yIntro: {
+    de: "Diese Website ist vollständig nutzbar, ohne sie zu sehen.",
+    en: "This website is fully usable without seeing it.",
+  },
+  a11yScreenreader: { de: "Komplette Screenreader-Kompatibilität", en: "Full screen reader compatibility" },
+  a11yHeadings: { de: "Logische Überschriftenstruktur", en: "Logical heading structure" },
+  a11yKeyboard: { de: "Tastaturnavigation ohne Maus", en: "Keyboard navigation without mouse" },
+  a11yNoHover: { de: "Keine Hover-Informationen", en: "No hover-only information" },
+  a11yAlt: { de: "Jede Grafik besitzt Alternativbeschreibung", en: "Every image has alt text" },
+  a11yOutro: {
+    de: "Die Gestaltung soll nicht beeindrucken, sondern verständlich sein.",
+    en: "The design aims to be understandable, not impressive.",
+  },
+
+  // Funktionsprinzip
+  funktionHeading: { de: "Funktionsprinzip", en: "How It Works" },
+  funktionReadAloud: { de: "Funktionsprinzip vorlesen", en: "Read how it works aloud" },
+  funktionIntro: {
+    de: "Im vorderen Bereich des Handschuhs befinden sich Ultraschallsensoren. Diese messen permanent den Abstand zu Objekten vor dem Nutzer:",
+    en: "Ultrasonic sensors are located at the front of the glove. They continuously measure the distance to objects in front of the user:",
+  },
+  funktionFar: { de: "Großer Abstand", en: "Large distance" },
+  funktionFarDesc: { de: "keine oder sehr leichte Vibration", en: "no or very light vibration" },
+  funktionMid: { de: "Mittlerer Abstand", en: "Medium distance" },
+  funktionMidDesc: { de: "spürbare Vibration", en: "noticeable vibration" },
+  funktionNear: { de: "Kurzer Abstand", en: "Short distance" },
+  funktionNearDesc: { de: "starke Vibration", en: "strong vibration" },
+  funktionVeryNear: { de: "Sehr nah", en: "Very close" },
+  funktionVeryNearDesc: { de: "intensive Warnung", en: "intensive warning" },
+  funktionOutro: {
+    de: "Die Hand fühlt die Entfernung. Es muss nichts interpretiert oder gelernt werden.",
+    en: "The hand feels the distance. Nothing needs to be interpreted or learned.",
+  },
+
+  // Einsatz
+  einsatzHeading: { de: "Wofür der Handschuh gedacht ist", en: "What the Glove Is Designed For" },
+  einsatzReadAloud: { de: "Einsatzbereiche vorlesen", en: "Read use cases aloud" },
+  einsatzIntro: {
+    de: "Der Handschuh ersetzt keinen Langstock und kein Navigationssystem. Er ergänzt die Wahrnehmung im Nahbereich.",
+    en: "The glove does not replace a white cane or navigation system. It supplements close-range awareness.",
+  },
+  einsatzIndoor: { de: "Gehen in Innenräumen", en: "Walking Indoors" },
+  einsatzIndoor1: { de: "Tischkanten erkennen", en: "Detect table edges" },
+  einsatzIndoor2: { de: "Wände früher wahrnehmen", en: "Perceive walls earlier" },
+  einsatzIndoor3: { de: "Durchgänge finden ohne anzustoßen", en: "Find passages without bumping" },
+  einsatzOutdoor: { de: "Alltag draußen", en: "Everyday Outdoors" },
+  einsatzOutdoor1: { de: "Parkende Autos ertasten", en: "Sense parked cars" },
+  einsatzOutdoor2: { de: "Poller erkennen", en: "Detect bollards" },
+  einsatzOutdoor3: { de: "Personen im Weg bemerken", en: "Notice people in the way" },
+  einsatzSafety: { de: "Sicherheitsgewinn", en: "Safety Benefits" },
+  einsatzSafety1: { de: "Weniger Kollisionen im Oberkörperbereich", en: "Fewer upper body collisions" },
+  einsatzSafety2: { de: "Frühere Reaktion möglich", en: "Earlier reaction possible" },
+  einsatzSafety3: { de: "Natürliche Bewegung bleibt erhalten", en: "Natural movement is preserved" },
+
+  // Nicht
+  nichtHeading: { de: "Was SensiGlove bewusst nicht macht", en: "What SensiGlove Intentionally Does Not Do" },
+  nichtReadAloud: { de: "Abgrenzung vorlesen", en: "Read limitations aloud" },
+  nicht1: { de: "Keine Sprachansagen", en: "No voice announcements" },
+  nicht2: { de: "Keine Navigation", en: "No navigation" },
+  nicht3: { de: "Keine App-Abhängigkeit", en: "No app dependency" },
+  nicht4: { de: "Keine komplexe Symbolsprache", en: "No complex symbol language" },
+  nicht5: { de: "Keine Überladung von Informationen", en: "No information overload" },
+  nichtOutro: {
+    de: "Der Handschuh liefert nur eine Information: Wie nah ist etwas vor mir?",
+    en: "The glove provides only one piece of information: How close is something in front of me?",
+  },
+
+  // Vergleich
+  vergleichHeading: { de: "Vorteile gegenüber dem Blindenstock", en: "Advantages Over the White Cane" },
+  vergleichReadAloud: { de: "Vergleich vorlesen", en: "Read comparison aloud" },
+  vergleichIntro: { de: "SensiGlove ist eine Ergänzung zum Langstock, kein Ersatz.", en: "SensiGlove supplements the white cane, it does not replace it." },
+  vergleichQuote: {
+    de: "Der Blindenstock zeigt, wo der Boden endet. SensiGlove zeigt, wo der Körper anstoßen würde.",
+    en: "The white cane shows where the ground ends. SensiGlove shows where the body would collide.",
+  },
+  vgl1Title: { de: "1. Früherkennung im Oberkörperbereich", en: "1. Early Detection at Upper Body Level" },
+  vgl1Text: {
+    de: "Der Blindenstock erkennt Hindernisse erst am Boden oder beim Kontakt. SensiGlove erkennt Hindernisse auf Handhöhe und darüber: Tischplatten, Schilder, Spiegel, offene Fenster.",
+    en: "The white cane only detects obstacles at ground level or on contact. SensiGlove detects obstacles at hand level and above: tabletops, signs, mirrors, open windows.",
+  },
+  vgl1Consequence: { de: "Konsequenz: Schutz von Kopf, Brust und Schultern.", en: "Result: Protection of head, chest, and shoulders." },
+  vgl2Title: { de: "2. Abstand statt Kontakt", en: "2. Distance Instead of Contact" },
+  vgl2Text: {
+    de: "Stock: Information erst nach Berührung. SensiGlove: Information vor der Berührung.",
+    en: "Cane: Information only after contact. SensiGlove: Information before contact.",
+  },
+  vgl2Consequence: { de: "Konsequenz: Natürlichere Bewegung, weniger Abbremsen, weniger Erschrecken.", en: "Result: More natural movement, less braking, less startling." },
+  vgl3Title: { de: "3. Kontinuierliche Entfernungsschätzung", en: "3. Continuous Distance Estimation" },
+  vgl3Text: {
+    de: "Der Stock liefert nur punktuelle Information beim Auftreffen. Der Handschuh liefert kontinuierliches Näherungsfeedback.",
+    en: "The cane provides only punctual information on impact. The glove provides continuous proximity feedback.",
+  },
+  vgl3Consequence: { de: "Konsequenz: Nutzer spürt, wie schnell er sich einem Objekt nähert, und passt Bewegung fließend an.", en: "Result: Users feel how quickly they approach an object and adjust movement fluidly." },
+  vgl4Title: { de: "4. Keine Bodenabhängigkeit", en: "4. No Ground Dependency" },
+  vgl4Text: {
+    de: "Der Stock funktioniert schlecht bei hervorstehenden Objekten, hängenden Hindernissen und seitlichen Kollisionen. Ultraschall erkennt auch freischwebende Hindernisse.",
+    en: "The cane works poorly with protruding objects, hanging obstacles, and lateral collisions. Ultrasound also detects free-floating obstacles.",
+  },
+  vgl4Consequence: { de: "Konsequenz: Erweiterter Wahrnehmungsraum.", en: "Result: Extended perception space." },
+  vgl5Title: { de: "5. Freiere Körperhaltung", en: "5. Freer Body Posture" },
+  vgl5Text: {
+    de: "Der Stock zwingt zu Abtastbewegung. Der Handschuh arbeitet passiv im Hintergrund.",
+    en: "The cane forces scanning movements. The glove works passively in the background.",
+  },
+  vgl5Consequence: { de: "Konsequenz: Natürlicheres Gehen und geringere kognitive Belastung.", en: "Result: More natural walking and lower cognitive load." },
+  vgl6Title: { de: "6. Diskrete Nutzung in engen Räumen", en: "6. Discreet Use in Tight Spaces" },
+  vgl6Text: {
+    de: "Der Stock benötigt Schwenkraum. Der Handschuh funktioniert auch bei wenig Platz: Aufzug, Bahn, Menschenmenge.",
+    en: "The cane requires sweeping space. The glove also works in tight spaces: elevators, trains, crowds.",
+  },
+  vgl6Consequence: { de: "Konsequenz: Weniger Kollisionen in dichtem Umfeld.", en: "Result: Fewer collisions in dense environments." },
+
+  // Kontakt
+  kontaktHeading: { de: "Kontakt", en: "Contact" },
+  kontaktReadAloud: { de: "Kontaktbereich vorlesen", en: "Read contact section aloud" },
+  kontaktIntro: {
+    de: "Haben Sie Fragen zu SensiGlove oder möchten Sie mehr erfahren?",
+    en: "Do you have questions about SensiGlove or want to learn more?",
+  },
+  kontaktEmail: { de: "E-Mail", en: "Email" },
+  kontaktInstagram: { de: "Instagram", en: "Instagram" },
+
+  // Footer
+  footerRights: { de: "Alle Rechte vorbehalten.", en: "All rights reserved." },
+
+  // Toolbar
+  darkMode: { de: "Dunkelmodus", en: "Dark mode" },
+  lightMode: { de: "Hellmodus", en: "Light mode" },
+  fontIncrease: { de: "Schrift vergrößern", en: "Increase font size" },
+  fontDecrease: { de: "Schrift verkleinern", en: "Decrease font size" },
+  langSwitch: { de: "Switch to English", en: "Auf Deutsch wechseln" },
+  menuOpen: { de: "Menü öffnen", en: "Open menu" },
+  menuClose: { de: "Menü schließen", en: "Close menu" },
+
+  // Team
+  navTeam: { de: "Über uns", en: "About Us" },
+  teamHeading: { de: "Über uns", en: "About Us" },
+  teamReadAloud: { de: "Über uns vorlesen", en: "Read about us aloud" },
+  teamRole1: { de: "Tech and Data Lead", en: "Tech and Data Lead" },
+  teamRole2: { de: "Hardware Lead", en: "Hardware Lead" },
+  teamRole3: { de: "Project Manager", en: "Project Manager" },
+  teamRole4: { de: "UX Lead", en: "UX Lead" },
+  teamAlt1: { de: "Porträtfoto von Moritz Klösters", en: "Portrait photo of Moritz Klösters" },
+  teamAlt2: { de: "Porträtfoto von Lucas Schall", en: "Portrait photo of Lucas Schall" },
+  teamAlt3: { de: "Porträtfoto von Julian Seyboldt", en: "Portrait photo of Julian Seyboldt" },
+  teamAlt4: { de: "Porträtfoto von Mathis Biesinger", en: "Portrait photo of Mathis Biesinger" },
+
+  // ReadAloud button
+  readAloudLabel: { de: "Vorlesen", en: "Read aloud" },
+  readAloudStop: { de: "Stoppen", en: "Stop" },
+  readAloudDefaultAria: { de: "Diesen Abschnitt vorlesen", en: "Read this section aloud" },
+  readAloudStopAria: { de: "Vorlesen stoppen", en: "Stop reading aloud" },
+
+  // Back to top
+  backToTop: { de: "Nach oben scrollen", en: "Scroll to top" },
+
+  // Keyboard shortcuts
+  shortcutHint: { de: "Tastenkürzel: ?", en: "Shortcuts: ?" },
+  shortcutTitle: { de: "Tastenkürzel", en: "Keyboard Shortcuts" },
+  shortcutDescription: {
+    de: "Übersicht aller verfügbaren Tastenkürzel auf dieser Seite.",
+    en: "Overview of all available keyboard shortcuts on this page.",
+  },
+  shortcutHelp: { de: "Diese Hilfe öffnen/schließen", en: "Open/close this help" },
+  shortcutFontUp: { de: "Schrift vergrößern", en: "Increase font size" },
+  shortcutFontDown: { de: "Schrift verkleinern", en: "Decrease font size" },
+  shortcutDark: { de: "Dunkelmodus umschalten", en: "Toggle dark mode" },
+  shortcutLang: { de: "Sprache wechseln (DE/EN)", en: "Switch language (DE/EN)" },
+  shortcutTop: { de: "Nach oben scrollen", en: "Scroll to top" },
+  shortcutClose: { de: "Mit Escape schließen", en: "Press Escape to close" },
+
+  // Auth
+  authLogin: { de: "Anmelden", en: "Sign in" },
+  authLogout: { de: "Abmelden", en: "Sign out" },
+  authRegister: { de: "Registrieren", en: "Sign up" },
+  authLoginTitle: { de: "Anmelden", en: "Sign in" },
+  authRegisterTitle: { de: "Konto erstellen", en: "Create account" },
+  authEmail: { de: "E-Mail", en: "Email" },
+  authPassword: { de: "Passwort", en: "Password" },
+  authEmailPlaceholder: { de: "name@beispiel.de", en: "name@example.com" },
+  authPasswordPlaceholder: { de: "Mindestens 8 Zeichen", en: "At least 8 characters" },
+  authEmailError: { de: "Bitte geben Sie eine gültige E-Mail-Adresse ein.", en: "Please enter a valid email address." },
+  authPasswordError: { de: "Das Passwort muss mindestens 8 Zeichen haben.", en: "Password must be at least 8 characters." },
+  authShowPassword: { de: "Passwort anzeigen", en: "Show password" },
+  authHidePassword: { de: "Passwort ausblenden", en: "Hide password" },
+  authNoAccount: { de: "Noch kein Konto?", en: "No account yet?" },
+  authHasAccount: { de: "Bereits ein Konto?", en: "Already have an account?" },
+  authSwitchRegister: { de: "Jetzt registrieren", en: "Register now" },
+  authSwitchLogin: { de: "Zur Anmeldung", en: "Go to sign in" },
+  authUserExists: { de: "Für diese E-Mail existiert bereits ein Konto.", en: "An account already exists for this email." },
+  authNoUser: { de: "Kein Konto für diese E-Mail gefunden. Bitte registrieren.", en: "No account found for this email. Please register." },
+  authWrongPassword: { de: "Falsches Passwort.", en: "Incorrect password." },
+  authLoggedInAs: { de: "Angemeldet als", en: "Signed in as" },
+  authForgotPassword: { de: "Passwort vergessen?", en: "Forgot password?" },
+  authResetTitle: { de: "Passwort zurücksetzen", en: "Reset password" },
+  authResetDescription: {
+    de: "Geben Sie Ihre E-Mail-Adresse ein. Supabase sendet Ihnen einen Link zum Zurücksetzen des Passworts.",
+    en: "Enter your email address. Supabase will send you a password reset link.",
+  },
+  authResetButton: { de: "Reset-Link senden", en: "Send reset link" },
+  authResetEmailSent: { de: "Wenn ein Konto existiert, wurde eine E-Mail zum Zurücksetzen des Passworts gesendet.", en: "If an account exists, a password reset email has been sent." },
+  authResetCancel: { de: "Abbrechen", en: "Cancel" },
+  authBackToLogin: { de: "Zurück zur Anmeldung", en: "Back to sign in" },
+  authConfirmTitle: { de: "E-Mail bestätigen", en: "Confirm your email" },
+  authConfirmDescription: { de: "Ihr Konto wurde angelegt. Bitte bestätigen Sie Ihre E-Mail-Adresse, bevor Sie sich anmelden.", en: "Your account has been created. Please confirm your email address before signing in." },
+  authConfirmHint: { de: "Prüfen Sie auch den Spam-Ordner, falls keine E-Mail angekommen ist.", en: "Check your spam folder if the email does not arrive." },
+
+  // Wifi info popup
+  wifiTitle: { de: "Mit SensiGlove verbinden", en: "Connect to SensiGlove" },
+  wifiInstruction: {
+    de: "Bitte verbinden Sie sich mit dem WLAN \"SensiGlove\", um Ihren Handschuh zu koppeln.",
+    en: "Please connect to the Wi-Fi network \"SensiGlove\" to pair your glove.",
+  },
+  wifiNetwork: { de: "Netzwerkname", en: "Network name" },
+  wifiDone: { de: "Weiter", en: "Continue" },
+
+  // Glove settings page
+  settingsNav: { de: "Glove-Einstellungen", en: "Glove settings" },
+  settingsTitle: { de: "Glove-Einstellungen", en: "Glove Settings" },
+  settingsLocalNotice: {
+    de: "Wenn Sie angemeldet sind, werden diese Einstellungen mit Supabase synchronisiert. Ohne Anmeldung bleiben sie lokal auf diesem Gerät.",
+    en: "When you are signed in, these settings sync with Supabase. Without sign-in, they stay local on this device.",
+  },
+  settingsBack: { de: "Zurück zur Startseite", en: "Back to home" },
+  settingsLock: { de: "Sperren", en: "Lock" },
+  settingsLocked: { de: "Gesperrt", en: "Locked" },
+  settingsUnlocked: { de: "Entsperrt", en: "Unlocked" },
+
+  pinSetupTitle: { de: "PIN festlegen", en: "Set up PIN" },
+  pinSetupIntro: {
+    de: "Legen Sie eine 4- bis 6-stellige PIN fest, um Ihre Glove-Einstellungen zu schützen. Die PIN wird nur lokal auf diesem Gerät gespeichert.",
+    en: "Set a 4- to 6-digit PIN to protect your glove settings. The PIN is stored only locally on this device.",
+  },
+  pinNew: { de: "Neue PIN", en: "New PIN" },
+  pinConfirm: { de: "PIN bestätigen", en: "Confirm PIN" },
+  pinSave: { de: "PIN speichern", en: "Save PIN" },
+  pinErrorLength: { de: "Die PIN muss 4 bis 6 Ziffern enthalten.", en: "PIN must be 4 to 6 digits." },
+  pinErrorMatch: { de: "Die PINs stimmen nicht überein.", en: "PINs do not match." },
+  pinErrorWrong: { de: "Falsche PIN. Bitte erneut versuchen.", en: "Incorrect PIN. Please try again." },
+  pinLockout: {
+    de: "Zu viele Fehlversuche. Bitte warten.",
+    en: "Too many failed attempts. Please wait.",
+  },
+
+  pinUnlockTitle: { de: "Bitte PIN eingeben", en: "Please enter PIN" },
+  pinUnlockIntro: {
+    de: "Geben Sie Ihre PIN ein, um die Glove-Einstellungen zu öffnen.",
+    en: "Enter your PIN to open the glove settings.",
+  },
+  pinLabel: { de: "PIN", en: "PIN" },
+  pinUnlock: { de: "Entsperren", en: "Unlock" },
+  pinForgot: { de: "PIN vergessen?", en: "Forgot PIN?" },
+  pinForgotInfo: {
+    de: "Da die PIN nur lokal gespeichert wird, kann sie nicht wiederhergestellt werden. Sie können alle lokalen Einstellungen zurücksetzen und eine neue PIN festlegen.",
+    en: "Because the PIN is stored only locally, it cannot be recovered. You can reset all local settings and set a new PIN.",
+  },
+  resetAll: { de: "Alles zurücksetzen", en: "Reset everything" },
+  resetConfirm: {
+    de: "Wirklich alle lokalen Einstellungen und die PIN löschen?",
+    en: "Really delete all local settings and the PIN?",
+  },
+
+  gsVibration: { de: "Vibrationsstärke", en: "Vibration intensity" },
+  gsRange: { de: "Erkennungsreichweite", en: "Detection range" },
+  gsCurve: { de: "Empfindlichkeitskurve", en: "Sensitivity curve" },
+  gsCurveLinear: { de: "Linear", en: "Linear" },
+  gsCurveSoft: { de: "Sanft", en: "Soft" },
+  gsCurveAggressive: { de: "Aggressiv", en: "Aggressive" },
+  gsProfile: { de: "Aktives Profil", en: "Active profile" },
+  gsProfileDefault: { de: "Standard", en: "Default" },
+  gsProfileIndoor: { de: "Drinnen", en: "Indoor" },
+  gsProfileOutdoor: { de: "Draußen", en: "Outdoor" },
+  gsProfileCrowded: { de: "Belebte Orte", en: "Crowded places" },
+  gsSavedHint: { de: "Einstellung gespeichert.", en: "Setting saved." },
+  gsChangePin: { de: "PIN ändern", en: "Change PIN" },
+  pinCurrent: { de: "Aktuelle PIN", en: "Current PIN" },
+
+  // How it works (3 steps)
+  howHeading: { de: "So funktioniert es", en: "How It Works" },
+  howReadAloud: { de: "So funktioniert es vorlesen", en: "Read how it works aloud" },
+  howStep1Title: { de: "Anziehen", en: "Put On" },
+  howStep1Desc: { de: "Handschuh überstreifen — sofort einsatzbereit, keine App nötig.", en: "Slip on the glove — instantly ready, no app needed." },
+  howStep2Title: { de: "Erkennen", en: "Detect" },
+  howStep2Desc: { de: "Ultraschallsensoren messen permanent den Abstand zu Objekten.", en: "Ultrasonic sensors continuously measure distance to objects." },
+  howStep3Title: { de: "Spüren", en: "Feel" },
+  howStep3Desc: { de: "Vibration zeigt die Nähe an — intuitiv und ohne Lernkurve.", en: "Vibration indicates proximity — intuitive with no learning curve." },
+};
+
+export function t(key: string, lang: Lang): string {
+  return translations[key]?.[lang] ?? key;
+}
